@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4.Kiểu dáng
+*/
+/*
+từ ngoài vào trong 
+từ trên xuống dưới
+từ tổng quan đến chi tiết
+*/
+.clear{
+    clear: both;
+}
+.text_white{
+    color :#fff !important;
+}
+
+.header{
+    background-color: black;
+    height: 46px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+/*begin nav*/
+.nav{
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover
+{
+      color: #000;
+      background-color: #ccc;
+      display: block;
+}
+
+.nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 20px;
+    display: block;  
+}
+
+.nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+.nav .subnav a{
+    color: #000;
+    width: 100%;
+}
+
+.nav .navicon{
+    font-size: 12px;
+}
+ /*end nav*/
+
+ /*begin search*/
+.header .search{
+    float: right;
+    padding: 0px 21px;
+}
+
+.header .searchicon{
+    color: #fff;;
+    font-size: 16px;
+    line-height: 46px;
+}
+
+.header .search:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+/* end search*/
+
+/*begin slider*/
+
+.slider{
+    margin-top: 46px;
+    position: relative;
+}
+.slider .anh-slider{
+    width: 100%;
+    height: 100%;
+}
+.slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: rgb(15, 49, 238);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider h2{
+     font-weight: 100;
+     margin-bottom: 10px;
+}
+
+.slider .text-sub{
+     font-weight: 100;
+
+}
+
+/*end slider*/
+.content{
+    height: auto;
+    background-color: #ccc;
+}
+
+.content .content-section{
+    width: 800px;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+.content .section-heading{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.content .section-sub{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.content .about{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content .anhlop{
+    margin-top: 48px;
+    overflow: hidden;
+}
+.content .caclop{
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+}
+
+.content .tenlop{
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.content .anh-tung-lop{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.story{
+    background-color: #ccc;
+    height: auto;
+    margin-top: 16px;
+}
+
+.ticket-list{
+    background-color: #fff;
+    width: 100%;
+
+}
+
+.ticket-list li{
+    font-size: 16px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    float: right;
+}
+
+.ticket-list .quantity{
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(8, 168, 70);
+    color:#070707
+}
+
+.all-img{
+  margin: 32px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.img-item{
+  float: left;
+  width: 33.3333%;
+  padding: 0px 8px;
+  background-color: #ccc;
+  
+}
+
+.all-img .anh:hover{
+    opacity: 0.6;
+}
+.all-img .anh{
+    width: 100%;
+    display: block;
+}
+
+.img-content{
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.content-heading{
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.img-item a{
+    background-color: rgb(144, 222, 224);
+    color: rgb(6, 99, 19);
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+}
+
+.footer .khung-anh-cuoi{
+    height: 50%;
+}
+
+.footer .anh-cuoi{
+    width: 100%;
+}
