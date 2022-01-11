@@ -88,7 +88,7 @@
                             <div class="img-content">
                                 <h3 class="content-heading">Lớp 10</h3>
                                 <p class="mota">Lớp 10 ngơ ngác</p>
-                                <a href="">Xem thêm</a>
+                                <button class="nut-bam js-bam">Xem thêm</button>
                             </div>
                         </div>
                         <div class="img-item">
@@ -96,7 +96,7 @@
                             <div class="img-content">
                                 <h3 class="content-heading">Lớp 11</h3>
                                 <p class="mota">Lớp 11 trôi qua đầy nhanh chóng</p>
-                                <a href="">Xem thêm</a>
+                                <button class="nut-bam js-bam">Xem thêm</button>
                             </div>
                         </div>
                         <div class="img-item">
@@ -104,7 +104,7 @@
                             <div class="img-content">
                                 <h3 class="content-heading">Lớp 12</h3>
                                 <p class="mota">Lớp 12 tràn ngập kỉ niệm</p>
-                                <a href="">Xem thêm</a>
+                                <button class="nut-bam js-bam">Xem thêm</button>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
             </div>
             <div class="clear"></div>
         </div>
-
+        
         
         
         <div class="footer">
@@ -122,5 +122,37 @@
              </div>
         </div>
     </div>
+    <div class="modal js-modal">
+        <div class="container">
+            <button class="dong js-dong">
+                <i class="ti-close"></i>
+            </button>
+            <div class="dautrang">Ảnh của các bạn đây :))</div>
+            <div class="body">
+                <img src="./assets/img/anh-bung.jpg" alt="ảnh bung ra" class="anh-bung">
+            </div>
+            <div class="footer">Chỉ có vậy thôi :))</div>
+        </div>
+    </div>
+
+    <script>
+        const bams = document.querySelectorAll('.js-bam')
+        const modal = document.querySelector('.js-modal')
+        const dongx = document.querySelector('.js-dong')
+
+        function show(){
+            modal.classList.add('open')
+        }
+
+        function close(){
+            modal.classList.remove('open')
+        }
+
+        for(const bam of bams){
+            bam.addEventListener('click', show)
+        }
+
+         dongx.addEventListener('click', close)
+    </script>
 </body>
 </html>
