@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AK21 Forever!</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -13,10 +14,10 @@
         <div class="header">
             <!--begin nav-->
             <ul class="nav">
-                <li><a href="">Trang Chủ</a></li>
-                <li><a href="">Các thành viên</a></li>
-                <li><a href="">Story</a></li>
+                <li><a href="slider">Trang Chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
                 <li><a href="">Ảnh</a></li>
+                <li><a href="">Srory</a></li>
                 <li>
                     <a href="#">
                         More
@@ -69,7 +70,8 @@
                         <img src="./assets/img/lop10.jpg" alt="" class="anh-tung-lop">
                     </div>
 
-                </div>                
+                </div>
+
                 <div class="story">
                     <div class="content">
                         <div class="content-section">
@@ -109,12 +111,37 @@
                         </div>
                     </div>
                 </div>
+
+                <h2 class="section-heading noi-rong">AK21 Chuyện chưa kể</h2>
+                <p class="section-sub">AK21 và những câu chuyện rớt nước mắt</p>
+                <div class="row chuyen-chua-ke">
+                    <div class="col col-half contact-infor">
+                        <p><i class="ti-user"></i> Nguyen Dong Hung</p>
+                        <p><i class="ti-location-pin"></i> Infor: Phu Tho. Doan Hung</p>
+                        <p><i class="ti-email"></i> Email: nguyenhunggnart@gmail.com</p>
+                    </div>
+
+                        <form action="" class="col contact-form">
+                            <div class="row">
+                                <div class="col col-half ">
+                                    <input type="text" name="" id="" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col col-half ">
+                                    <input type="email" name="" id="" placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" id="" placeholder="Message" class="form-control">
+                                </div>
+                            </div>
+                            <input class="mt-16" type="submit" value="SEND">
+                        </form>
+                    <div class="col col-half"></div>
+                </div>
             </div>
-            <div class="clear"></div>
         </div>
-        
-        
-        
+              
         <div class="footer">
              <div class="khung-anh-cuoi">
                  <img src="./assets/img/anh-cuoi.jpg" alt="" class="anh-cuoi">
@@ -122,11 +149,12 @@
              </div>
         </div>
     </div>
+
     <div class="modal js-modal">
         <div class="container">
-            <button class="dong js-dong">
+            <div class="dong js-dong">
                 <i class="ti-close"></i>
-            </button>
+            </div>
             <div class="dautrang">Ảnh của các bạn đây :))</div>
             <div class="body">
                 <img src="./assets/img/anh-bung.jpg" alt="ảnh bung ra" class="anh-bung">
